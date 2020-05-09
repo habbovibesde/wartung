@@ -1,0 +1,213 @@
+/*!
+ * HabboVibes.de - Wir lieben gute Musik!
+ *
+ * @author   Gummiauge & efi.styler
+ * @version  1.0.0
+ */
+
+body {
+  background-color: #696969;
+  background-attachment: fixed;
+  background-image: url('../images/background.png');
+  background-repeat: repeat-x;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #2e3f49;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+marquee {
+  margin-bottom: -3px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.container {
+  position: relative;
+  width: 670px;
+  margin: 40px auto;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* ================ Header ================ */
+
+#header {
+  background-image: url('../images/header_hotel.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 259px;
+  margin-right: 25px;
+}
+
+#header a > #logo {
+  position: absolute;
+  background-image: url('../images/logo.png');
+  width: 247px;
+  height: 73px;
+  margin-top: 230px;
+  margin-left: -30px;
+}
+
+#header > #radiostatus {
+  position: absolute;
+  border-radius: 100%;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  color: #ffffff;
+  width: 155px;
+  height: 75px;
+  margin-top: 85px;
+  margin-left: 338px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+#header > #radiostatus > .title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#header > #radiostatus > .subtitle {
+  margin-bottom: 10px;
+}
+
+#header > #habbo {
+  position: absolute;
+  width: 128px;
+  height: 160px;
+  top: 98px;
+  right: 35px;
+}
+
+#header > #player_buttons {
+  position: absolute;
+  top: 270px;
+  right: 25px;
+}
+
+#header > #player_buttons > a {
+  float: left;
+  margin-right: 5px;
+}
+
+#header > #player_buttons > a > .btn {
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #EBEBEB;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px #3EADC5;
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+}
+
+#header > #player_buttons > a > .btn.webplayer {
+  background-image: url('../images/icons/webplayer.png');
+}
+
+#header > #player_buttons > a > .btn.mediaplayer {
+  background-image: url('../images/icons/mediaplayer.png');
+}
+
+#header > #player_buttons > a > .btn.winamp {
+  background-image: url('../images/icons/winamp.png');
+}
+
+/* ================ Content Box ================ */
+
+#content_box {
+  background-color: #ffffff;
+  border: 1px solid #585858;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #ffffff, 0 2px 0 1px rgba(0,0,0,.2);
+  padding: 50px 30px 30px;
+}
+
+#content_box a {
+  font-weight: bold;
+  color: inherit;
+}
+
+#content_box > .box {
+  border: 2px solid #EBEBEB;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px #3EADC5;
+  word-break: break-word;
+  color: #3EADC5;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#content_box > .box > h2 {
+  margin: 0.3rem 0;
+}
+
+#content_box > .box > .alert {
+  background-color: #d4edda;
+  border: 1px solid;
+  border-color: #155724;
+  margin-bottom: 20px;
+  color: #155724;
+  padding: 7px;
+}
+
+#content_box > .box > .alert.error {
+  background-color: #FFE6E1;
+  border-color: #E2001A;
+  color: #E2001A;
+}
+
+#content_box > .box .form-group {
+  margin-top: 10px;
+}
+
+#content_box > .box label {
+  display: inline-block;
+  width: 200px;
+}
+
+#content_box > .box .input {
+  background-color: #ffffff;
+  border: 2px solid #EBEBEB;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px #3EADC5;
+  font-size: 12px;
+  font-weight: bold;
+  outline: none;
+  color: #3EADC5;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/* ======================== Marquee ======================== */
+
+.marquee {
+  max-width: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee span:hover {
+  animation-play-state: paused 
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
